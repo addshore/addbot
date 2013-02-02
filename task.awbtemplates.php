@@ -66,7 +66,22 @@ $templates = array_unique($templates);
 		}
 		else
 		{
-			$count_rem++;
+			sleep(10);
+				//If the page exists
+				if($wiki->getpageid($template) > 0)
+				{
+					//Add the page to the list
+					if(preg_match("/\/(sandbox.?|doc|\.(css|js))/i",$template) != true)
+					{
+						$output .= "\n# [[$template]]";
+						$ycount++;
+					}
+				}
+				else
+				{
+					sleep(10);
+					$count_rem++;
+				}
 		}
 	}
 
