@@ -1,0 +1,6 @@
+{
+	"require": {
+		"addwiki/mediawiki-bot": "dev-master"
+	},
+	"minimum-stability" : "dev"
+}

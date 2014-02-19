@@ -1,4 +1,2 @@
-addbot-php
+addbot
 ==========
-
-Deprecated Addbot code from around Feb 03, 2013
